@@ -11,7 +11,7 @@
     <OutputPath>.</OutputPath>
     <ProjectTypeGuids>{888888a0-9f3d-457c-b088-3a5042f75d52}</ProjectTypeGuids>
     <LaunchProvider>Standard Python launcher</LaunchProvider>
-    <InterpreterId>MSBuild|env_LearningForPython_koans|$(MSBuildProjectFullPath)</InterpreterId>
+    <InterpreterId>MSBuild|env_forLearning|$(MSBuildProjectFullPath)</InterpreterId>
     <IsWindowsApplication>False</IsWindowsApplication>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)' == 'Debug'" />
@@ -192,6 +192,15 @@
     <Folder Include="python3\runner\runner_tests" />
   </ItemGroup>
   <ItemGroup>
+    <Interpreter Include="env_forLearning\">
+      <Id>env_forLearning</Id>
+      <Version>3.7</Version>
+      <Description>env_forLearning (Python 3.7 (64-bit))</Description>
+      <InterpreterPath>Scripts\python.exe</InterpreterPath>
+      <WindowsInterpreterPath>Scripts\pythonw.exe</WindowsInterpreterPath>
+      <PathEnvironmentVariable>PYTHONPATH</PathEnvironmentVariable>
+      <Architecture>X64</Architecture>
+    </Interpreter>
     <Interpreter Include="env_LearningForPython_koans\">
       <Id>env_LearningForPython_koans</Id>
       <Description>env_LearningForPython_koans (Python 3.6 (32-bit))</Description>
